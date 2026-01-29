@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио AI-навыков — Колесникова Екатерина</title>
+  <style>
+    /* Общие настройки */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    /* Заголовок с градиентом и прозрачностью */
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .portfolio-title {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: 800;
+      background: linear-gradient(135deg, #7e22ce, #8b5cf6, #0ea5e9);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      background-size: 300% 300%;
+      animation: gradientShift 8s ease infinite;
+      margin-bottom: 0.5rem;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .name {
+      font-size: 1.25rem;
+      color: #475569;
+      font-weight: 600;
+    }
+
+    /* Основной контент */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #334155;
+      position: relative;
+      padding-left: 12px;
+    }
+
+    .section-title::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.4em;
+      height: 0.8em;
+      width: 4px;
+      background: #8b5cf6;
+      border-radius: 2px;
+    }
+
+    /* Карточки навыков */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .skill-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #e2e8f0;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(139, 92, 246, 0.15);
+    }
+
+    .skill-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #4f46e5;
+    }
+
+    .skill-card ul {
+      padding-left: 1.25rem;
+    }
+
+    .skill-card li {
+      margin-bottom: 0.6rem;
+      color: #334155;
+    }
+
+    /* Блоки кейсов */
+    .case-block {
+      background: #f1f5f9;
+      border-left: 4px solid #8b5cf6;
+      padding: 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #1e293b;
+    }
+
+    /* Сетка инструментов */
+    .tools-section {
+      margin-top: 1.5rem;
+    }
+
+    .tools-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .tool-tag {
+      background: #eef2ff;
+      color: #4f46e5;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+
+    .tool-tag:hover {
+      background: #dddfff;
+    }
+
+    /* Адаптивность */
+    @media (max-width: 600px) {
+      .portfolio-title {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .skill-card {
+        padding: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1 class="portfolio-title">ПОРТФОЛИО AI-НАВЫКОВ</h1>
+    <p class="name">Колесникова Екатерина Сергеевна</p>
+  </div>
+
+  <div class="container">
+
+    <div class="section">
+      <h2 class="section-title">1. Ключевые AI-навыки и практические кейсы</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>1.1. Применение ИИ для финансовой прозрачности и контроля</h3>
+          <ul>
+            <li>Чётко разделяю возможности ИИ, нейросетей и конкретных инструментов (ChatGPT, Gemini, Copilot) — и объясняю их бизнес-ценность без «технического жаргона».</li>
+            <li>Использую ИИ не для замены мышления, а как инструмент ускорения: поиск информации, структурирование данных, генерация гипотез по оптимизации расходов.</li>
+            <li>Применяю нейросети для личной эффективности: подбор тренировок, планирование питания, изучение языков.</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>1.6. AI-решения для антикризисного управления</h3>
+          <ul>
+            <li>Создаю Telegram-ботов для внутренних процессов: согласование заявок, уведомления о кассовых разрывах, моментальные бонусы.</li>
+            <li>Строю «цифрового ассистента» для собственника: ежедневные дайджесты по ключевым метрикам (ликвидность, маржинальность, дебиторка).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="case-block">
+        Автоматизировал обработку банковской выписки и первичную аналитику операций с помощью Google Apps Script + правила на основе ИИ-подсказок. Это позволило сократить время на разнесение транзакций и повысить точность отчётности по двум производственным направлениям.
+      </div>
+
+      <div class="case-block">
+        Реализовал систему моментальных бонусов через Telegram-бота и Google Таблицы — решение позволило мотивировать команду в условиях падения продаж и сезонных колебаний, сохранив вовлечённость без задержек в выплатах.
+      </div>
+    </div>
+
+    <div class="section tools-section">
+      <h2 class="section-title">2. Инструменты, которые использую</h2>
+      <div class="tools-grid">
+        <div class="tool-tag">ChatGPT</div>
+        <div class="tool-tag">Gemini</div>
+        <div class="tool-tag">GitHub Copilot</div>
+        <div class="tool-tag">Google Таблицы + Apps Script</div>
+        <div class="tool-tag">Telegram-боты</div>
+        <div class="tool-tag">Make / Zapier</div>
+        <div class="tool-tag">AI для анализа документов</div>
+        <div class="tool-tag">Формулы с обработкой пустых значений</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
